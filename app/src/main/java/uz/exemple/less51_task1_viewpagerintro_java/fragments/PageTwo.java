@@ -29,16 +29,11 @@ public class PageTwo extends Fragment {
     void  initViews( View view){
         TextView tv_title = view.findViewById(R.id.tv_title_f2);
         TextView tv_desc = view.findViewById(R.id.tv_desc_f2);
-        TextView tv_skip = view.findViewById(R.id.tv_skip_f2);
+
         tv_title.setText("Safe, Trusted & Fully Secure");
         tv_desc.setText("Encrypted transactions mean your payments & Privacy and protected.");
 
-        tv_skip.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openMainActivity();
-            }
-        });
+
     }
 
     void openMainActivity(){

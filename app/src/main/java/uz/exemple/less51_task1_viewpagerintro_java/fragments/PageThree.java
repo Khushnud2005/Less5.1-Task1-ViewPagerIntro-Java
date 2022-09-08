@@ -30,16 +30,11 @@ public class PageThree extends Fragment {
     void  initViews( View view){
         TextView tv_title = view.findViewById(R.id.tv_title_f3);
         TextView tv_desc = view.findViewById(R.id.tv_desc_f3);
-        Button btn_start = view.findViewById(R.id.btn_start);
+
         tv_title.setText("Easy To Use");
         tv_desc.setText("Pick a number, choose an amount, send your Top-up. Simple");
 
-        btn_start.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openMainActivity();
-            }
-        });
+
     }
 
     void openMainActivity(){

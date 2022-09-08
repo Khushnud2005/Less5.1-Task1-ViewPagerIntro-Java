@@ -29,16 +29,11 @@ public class PageOne extends Fragment {
     void  initViews( View view){
         TextView tv_title = view.findViewById(R.id.tv_title_f1);
         TextView tv_desc = view.findViewById(R.id.tv_desc_f1);
-        TextView tv_skip = view.findViewById(R.id.tv_skip_f1);
+
         tv_title.setText("Say Hello to Global Top - Up");
         tv_desc.setText("Send mobile top-up to more then 500 networks in over 140 countries.");
 
-        tv_skip.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openMainActivity();
-            }
-        });
+
     }
 
     void openMainActivity(){
